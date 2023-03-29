@@ -13,9 +13,12 @@ Software environment: Ubuntu 18.04.6, Python 3.9, PyTorch 1.11.0 and CUDA 11.8.
 
 To train the model(s) in the paper
 
-Open main.py to train different graph neural networks with different federated graph model optimization strategies, we provide Cora dataset under Louvain 10 clients split as example (hyperparameters in config.py by default).
+1. Please unzip Cora.zip/CiteSeer.zip/PubMed.zip to the current file directory location
+2. Open main.py to train GAMLP (the best local scalable GNN model) with our proposed federated graph model optimization strategies (FedGTA).
 
-Run this command:
+    We provide Cora/CiteSeer/PubMed dataset under Louvain 10 clients split as example (hyperparameters in config.py).
+
+    Run this command:
 
 ```python
   python main.py
